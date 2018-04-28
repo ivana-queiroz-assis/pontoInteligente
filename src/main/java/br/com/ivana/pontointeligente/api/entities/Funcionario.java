@@ -1,11 +1,11 @@
 package br.com.ivana.pontointeligente.api.entities;
 
-import java.beans.Transient;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
-import java.util.Optional;
+
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -86,10 +86,8 @@ public class Funcionario implements Serializable {
 	public BigDecimal getValorHora() {
 		return valorHora;
 	}
-	@Transient
-	public Optional<BigDecimal> getValorHoraOpt() {
-		return Optional.ofNullable(valorHora);
-	}
+	
+	
 	public void setValorHora(BigDecimal valorHora) {
 		this.valorHora = valorHora;
 	}
@@ -97,10 +95,7 @@ public class Funcionario implements Serializable {
 	public Float getQtdHorasTrabalhoDia() {
 		return qtdHorasTrabalhoDia;
 	}
-	@Transient
-	public Optional<Float> getQtdHorasTrabalhoDiaOpt() {
-		return Optional.ofNullable(qtdHorasTrabalhoDia);
-	}
+	
 	public void setQtdHorasTrabalhoDia(Float qtdHorasTrabalhoDia) {
 		this.qtdHorasTrabalhoDia = qtdHorasTrabalhoDia;
 	}
