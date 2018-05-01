@@ -18,6 +18,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import br.com.ivana.pontointeligente.api.entities.Empresa;
 import br.com.ivana.pontointeligente.api.entities.Funcionario;
 import br.com.ivana.pontointeligente.api.enums.PerfilEnum;
+import br.com.ivana.pontointeligente.api.utils.PassWordUtils;
 
 
 @RunWith(SpringRunner.class)
@@ -55,7 +56,6 @@ public class FuncionarioRepositoryTest {
 	@Test
 	public void testBuscarFuncionarioPorCpf() {
 		Funcionario funcionario = this.funcionarioRepository.findByCpf(CPF);
-
 		assertEquals(CPF, funcionario.getCpf());
 	}
 

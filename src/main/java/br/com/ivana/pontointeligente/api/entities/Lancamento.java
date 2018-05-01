@@ -20,6 +20,7 @@ import javax.persistence.TemporalType;
 
 import br.com.ivana.pontointeligente.api.enums.TipoEnum;
 
+
 @Entity
 @Table(name = "lancamento")
 public class Lancamento implements Serializable {
